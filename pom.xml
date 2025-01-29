@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.github.Leonardo0013YT</groupId>
+    <artifactId>UltraSkyWars</artifactId>
+    <version>125</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot</artifactId>
+            <version>1.8.8-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.22</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>3.6.3</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongo-java-driver</artifactId>
+            <version>3.12.10</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP</artifactId>
+            <version>3.4.2</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>de.simonsator</groupId>
+            <artifactId>Spigot-Party-API-For-RedisBungee</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>me.clip</groupId>
+            <artifactId>placeholderapi</artifactId>
+            <version>2.11.6</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>jakarta.annotation</groupId>
+            <artifactId>jakarta.annotation-api</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.mojang</groupId>
+            <artifactId>authlib</artifactId>
+            <version>1.5.21</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>be.maximvdw</groupId>
+            <artifactId>MVdWPlaceholderAPI</artifactId>
+            <version>2.1.1-SNAPSHOT</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/library/MVdWPlaceholderAPI.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.whilein.fawe-legacy</groupId>
+            <artifactId>core</artifactId>
+            <version>888d0e9e</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/library/FastAsyncWorldEdit.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sk89q.worldedit</groupId>
+            <artifactId>worldedit-core</artifactId>
+            <version>6.1.4-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sk89q.worldedit</groupId>
+            <artifactId>worldedit-bukkit</artifactId>
+            <version>6.1.4-SNAPSHOT</version>
+            <scope>provided</scope>
+            <exclusions>
+                <exclusion>
+                    <artifactId>worldedit-core</artifactId>
+                    <groupId>*</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>bukkit</artifactId>
+                    <groupId>*</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>com.sk89q.lib</artifactId>
+                    <groupId>*</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>net.nifheim.beelzebu</groupId>
+            <artifactId>Coins</artifactId>
+            <version>1</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/library/Coins.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>org.black_ixx</groupId>
+            <artifactId>playerpoints</artifactId>
+            <version>3.3.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.MilkBowl</groupId>
+            <artifactId>VaultAPI</artifactId>
+            <version>1.7</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sainttx.holograms</groupId>
+            <artifactId>holograms-api</artifactId>
+            <version>2.13</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.gmail.filoghost.holographicdisplays</groupId>
+            <artifactId>holographicdisplays-api</artifactId>
+            <version>2.4.9</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>me.arasple.mc</groupId>
+            <artifactId>TrHologram</artifactId>
+            <version>1</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/library/TrHologram-2.2-all.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>me.robin</groupId>
+            <artifactId>LeaderHeads</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/library/LeaderHeadsAPI.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>me.neznamy</groupId>
+            <artifactId>tab-api</artifactId>
+            <version>3.0.1</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.grinderwolf</groupId>
+            <artifactId>slimeworldmanager-api</artifactId>
+            <version>2.2.1</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/library/slimeworldmanager-plugin-2.2.1.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alessiodp.parties</groupId>
+            <artifactId>parties-api</artifactId>
+            <version>3.2.15</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+
+        <repository>
+            <id>codemc-public</id>
+            <url>https://repo.codemc.io/repository/maven-public/</url>
+        </repository>
+
+        <repository>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>central</id>
+            <name>Central Repository</name>
+            <url>https://repo.maven.apache.org/maven2</url>
+        </repository>
+
+        <repository>
+            <id>simonsators-repo</id>
+            <url>https://simonsator.de/repo/</url>
+        </repository>
+
+        <repository>
+            <id>spigot-repo</id>
+            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+        </repository>
+
+        <repository>
+            <id>placeholderapi</id>
+            <url>https://repo.extendedclip.com/content/repositories/placeholderapi/</url>
+        </repository>
+
+        <repository>
+            <id>minecraft-repo</id>
+            <url>https://libraries.minecraft.net/</url>
+        </repository>
+
+        <repository>
+            <id>enginehub-maven</id>
+            <url>https://maven.enginehub.org/repo/</url>
+        </repository>
+
+        <repository>
+            <id>rosewood</id>
+            <url>https://repo.rosewooddev.io/repository/public/</url>
+        </repository>
+
+        <repository>
+            <id>minebench</id>
+            <url>https://repo.minebench.de/</url>
+        </repository>
+
+        <repository>
+            <id>alessiodp-repo</id>
+            <url>https://repo.alessiodp.com/releases/</url>
+        </repository>
+
+    </repositories>
+
+</project>
