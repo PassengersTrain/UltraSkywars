@@ -33,4 +33,8 @@ public class Multiplier {
     public String getType() {
         return type;
     }
+
+    public double getAmount() {
+        return amount;
+    }
 }

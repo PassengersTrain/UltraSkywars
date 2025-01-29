@@ -568,4 +568,48 @@ public class ConfigManager {
     public byte getRedPanelData() {
         return redPanelData;
     }
+
+    public String getSlimeworldmanagerLoader() {
+        return slimeworldmanagerLoader;
+    }
+
+    public int getCoinsAssists() {
+        return coinsAssists;
+    }
+
+    public int getSoulsAssists() {
+        return soulsAssists;
+    }
+
+    public int getXpAssists() {
+        return xpAssists;
+    }
+
+    public double getUpYAni1() {
+        return upYAni1;
+    }
+
+    public long getTicksAni1() {
+        return ticksAni1;
+    }
+
+    public ItemStack getHead() {
+        return head;
+    }
+
+    public int getExecutesAni3() {
+        return executesAni3;
+    }
+
+    public long getTicksAni3() {
+        return ticksAni3;
+    }
+
+    public boolean isSignsRight() {
+        return signsRight;
+    }
+
+    public boolean isSignsLeft() {
+        return signsLeft;
+    }
 }
