@@ -767,7 +767,8 @@ public class PlayerListener implements Listener {
             if (g == null) {
                 return;
             }
-            if(g.isState(State.WAITING) && gamePlayer.hasChallenge("PAPER")) {
+            if(g.isState(State.WAITING) || g.isState(State.FINISH) || g.isState(State.RESTARTING) || g.isState(State.PREGAME) ||
+                    g.isState(State.STARTING) && gamePlayer.hasChallenge("PAPER")) {
                 e.setCancelled(true);
             }
             if(UltraSkyWarsAPI.isSpectator(p) && !UltraSkyWarsAPI.isPlayerGame(p)) {
